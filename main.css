@@ -19,19 +19,68 @@ section:nth-of-type(1) {
   text-align: center;
 }
 
+section:nth-of-type(2) {
+  background: #f1f2f8;
+  height: 100%;
+}
+
+section:nth-of-type(3) {
+  background-image: linear-gradient(#f1f2f8 , #f6de49);
+}
+
+section:nth-of-type(4) {
+  background-image: linear-gradient(#f6de49 , #77d8bd);
+}
+
+section:nth-of-type(5) {
+  background-image: linear-gradient(#77d8bd , #f1f2f8);
+}
+
+section:nth-of-type(6) {
+  background-image: linear-gradient(#f1f2f8 , #74d6cd);
+  height: 60%;
+}
+
+section:nth-of-type(7) {
+  height: 100%;
+  background-image: linear-gradient(#74d6cd , #489cd6, #fff);
+}
+
 #headingContainer {
   padding: 16px;
   padding-top: 64px;
 }
 
 .heading {
-  font-size: 72px;
+  font-size: 48px;
 }
 
 #headingContainer h1 {
   margin: 0;
   color: #fff;
   margin-top: 16px;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 8px;
+}
+
+.quote-symbol-start, .quote-symbol-end {
+  font-size: 48px;
+  line-height: 0;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.quote-content {
+  margin: 0 24px;
+}
+
+.quote-symbol-end {
+  align-self: flex-end;
 }
 
 .dp, .picture {
@@ -69,11 +118,6 @@ section:nth-of-type(1) {
   border-radius: 50%;
 }
 
-section:nth-of-type(2) {
-  background: #f1f2f8;
-  height: 100%;
-}
-
 #waveBackground {
   background-image: url('./images/bottom.png');
   height: 300px;
@@ -88,16 +132,6 @@ section:nth-of-type(2) {
   background: #d3665e;
   border-radius: 50%;
   margin: auto;
-}
-
-section:nth-of-type(3) {
-  background-image: linear-gradient(#f1f2f8 , #74d6cd);
-  height: 60%;
-}
-
-section:nth-of-type(4) {
-  height: 100%;
-  background-image: linear-gradient(#74d6cd , #489cd6, #fff);
 }
 
 .youAreAValueContainer {
@@ -122,11 +156,15 @@ section:nth-of-type(4) {
   justify-content: flex-end;
 }
 
-.blackColor {
+.black-color {
   color: #333 !important;
 }
 
-#bdayWishContainer {
+.white-color {
+  color: #fff !important;
+}
+
+#bdayWishContainer, #baloon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,7 +201,7 @@ section:nth-of-type(4) {
   }
 
   .heading {
-    font-size: 32px;
+    font-size: 18px;
   }
 
   #redCircle {
@@ -173,5 +211,14 @@ section:nth-of-type(4) {
 
   #youAreA {
     font-size: 16px;
+  }
+
+  .quote-symbol-start, .quote-symbol-end {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+
+  .quote-content {
+    font-size: 12px;
   }
 }

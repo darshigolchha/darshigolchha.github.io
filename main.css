@@ -71,8 +71,11 @@ section:nth-of-type(7) {
 .quote-symbol-start, .quote-symbol-end {
   font-size: 48px;
   line-height: 0;
-  margin-top: 16px;
   margin-bottom: 0;
+}
+
+.quote-symbol-start {
+  margin-top: 16px;
 }
 
 .quote-content {
@@ -81,6 +84,7 @@ section:nth-of-type(7) {
 
 .quote-symbol-end {
   align-self: flex-end;
+  margin-top: 24px;
 }
 
 .dp, .picture {
@@ -171,17 +175,18 @@ section:nth-of-type(7) {
   justify-content: center;
 }
 
+#baloon {
+  opacity: 0.5;
+}
+
 #bdayWishContainer img {
   width: 200px;
 }
 
-#audioContainer {
+#videoContainer {
   display: flex;
   justify-content: center;
-}
-
-#audioContainer audio {
-  outline: none;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 768px) {
@@ -220,5 +225,6 @@ section:nth-of-type(7) {
 
   .quote-content {
     font-size: 12px;
+    margin: 0 12px;
   }
 }
